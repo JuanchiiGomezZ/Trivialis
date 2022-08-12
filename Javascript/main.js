@@ -9,22 +9,12 @@ let lista = [0, 1, 2, 3];
 let curentWinining = 0;
 let curentLoosing = 0;
 if (localStorage.getItem("wins") == null) {
-  wins = localStorage.setItem("wins", 0);
-} else if (localStorage.getItem("looses") == null) {
-  looses = localStorage.setItem("looses", 0);
-}
-else if (localStorage.getItem("looseStreak") == null) {
-   looseStreak = localStorage.setItem("looseStreak", 0);
-}
-else if (localStorage.getItem("winStreak") == null) {
+  localStorage.setItem("wins", 0);
+  localStorage.setItem("looses", 0);
+  looseStreak = localStorage.setItem("looseStreak", 0);
   winStreak = localStorage.setItem("winStreak", 0);
-}
-else if (localStorage.getItem("biggestWinStreak") == null) {
-  biggestWinStreak = localStorage.setItem("biggestWinStreak", 0);
-}
-
-else if (localStorage.getItem("points") == null) {
   points = localStorage.setItem("points", 0);
+  biggestWinStreak = localStorage.setItem("biggestWinStreak", 0);
 }
 
 
