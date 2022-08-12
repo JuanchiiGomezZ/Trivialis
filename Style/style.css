@@ -216,7 +216,7 @@ footer img{
 
   @media screen and (max-width: 350px) {
     #container{
-      width:90%;
+      width:95%;
     }
     .points{
       margin: 0;
@@ -228,9 +228,15 @@ footer img{
       padding: 10px;
     }
     .question{
-      padding: 10px 15px 15px 15px;
+      padding: 7px 12px 12px 12px;
+    }
+    .option{
+      padding: 2px;
     }
     .fa-xmark{
       margin-top: 20px;
+    }
+    #container {
+      height:75vh ;
     }
   }
