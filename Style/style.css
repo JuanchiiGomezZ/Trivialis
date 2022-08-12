@@ -21,6 +21,7 @@ body {
   background-color: var(--bg-color-red);
   overflow-y: hidden;
 }
+
 /* HEADER */
 header {
   width: 100vw;

@@ -79,8 +79,7 @@ const trivialis = async () => {
 
       options = document.querySelectorAll(".option");
       options.forEach(function (option) {
-        console.log((option.innerHTML).length)
-        if((option.innerHTML).length > 20 ||(datos[0].question).length > 80){
+        if((option.innerHTML).length > 20 ||(datos[0].question).length > 100){
           location.reload();
         }
         option.addEventListener("click", function handleClick() {
