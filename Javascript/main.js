@@ -75,11 +75,16 @@ const trivialis = async () => {
           <img src="/Assets/flame.png">
         </div>`
         statsContainer.innerHTML = stats;
-
+  
 
       options = document.querySelectorAll(".option");
       options.forEach(function (option) {
+        console.log((option.innerHTML).length)
+        if((option.innerHTML).length > 20 ||(datos[0].question).length > 80){
+          location.reload();
+        }
         option.addEventListener("click", function handleClick() {
+          
           let selectedOption = option.textContent;
           if (selectedOption == datos[0].correctAnswer) {
 
@@ -173,7 +178,19 @@ function posRandom() {
 }
 
 
-function stats(){
+let openMenu = document.querySelector("#open-menu")
+let closeMenu = document.querySelector("#close-menu")
+
+openMenu.onclick = () => {
+  statsContainer.classList.add("active")
+  closeMenu.classList.add("active")
+  openMenu.classList.add("hide")
+
+}
+closeMenu.onclick = () => {
+  statsContainer.classList.remove("active")
+  closeMenu.classList.remove("active")
+  openMenu.classList.remove("hide")
 
 }
 
