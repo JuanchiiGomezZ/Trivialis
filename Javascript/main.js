@@ -180,7 +180,7 @@ function posRandom() {
 let openMenu = document.querySelector("#open-menu")
 let closeMenu = document.querySelector("#close-menu")
 
-openMenu.onclick = () => {
+/* openMenu.onclick = () => {
   statsContainer.classList.add("active")
   closeMenu.classList.add("active")
   openMenu.classList.add("hide")
@@ -191,5 +191,5 @@ closeMenu.onclick = () => {
   closeMenu.classList.remove("active")
   openMenu.classList.remove("hide")
 
-}
+} */
 
